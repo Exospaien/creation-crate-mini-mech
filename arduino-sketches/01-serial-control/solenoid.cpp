@@ -1,5 +1,13 @@
 #include "solenoid.h"
       
+
+void Solenoid::setupPump(int pin)
+{
+   solenoidActive = 0;
+   pumpPin = pin;
+   pinMode(pin, OUTPUT);
+}
+
 Solenoid::Solenoid(int pin) : pin(pin), extending(false)
 {
 }

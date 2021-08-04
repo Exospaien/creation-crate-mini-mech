@@ -9,6 +9,8 @@ class Solenoid {
       static int pumpPin;
       
       Solenoid(int pin);
+
+      static void setupPump(int pin);
       void begin();
       void extend();
       void retract();
