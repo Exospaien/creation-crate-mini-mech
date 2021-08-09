@@ -1,24 +1,26 @@
+#ifndef SOLENOID_H
+#define SOLENOID_H
+
 #include <Arduino.h>
 
 using namespace std;
 
 class Solenoid {
-
-   public:
-      static int solenoidActive;
-      static int pumpPin;
       
-      Solenoid(int pin);
-
-      static void setupPump(int pin);
+   public:
+      Solenoid(int pin);  
       void begin();
       void extend();
       void retract();
       void loop();
       void toggle();
-
+ 
    private:
+      static int solenoidActive;
+      static int pumpPin;
       int pin;
       bool extending;
-
+      
 };
+
+#endif

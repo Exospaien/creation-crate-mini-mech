@@ -1,8 +1,6 @@
 #include "solenoid.h"
 #include "glove.h"
 
-
-Solenoid::setupPump(3);
 Solenoid s_left_outer_knee(4);
 Solenoid s_left_outer_hip(5);
 Solenoid s_left_inner_knee(6);
@@ -12,7 +10,6 @@ Solenoid s_right_inner_hip(9);
 Solenoid s_right_outer_knee(10);
 Solenoid s_right_outer_hip(11);
 
-Glove::setupMux(12);
 Glove g_left_outer_knee(0);
 Glove g_left_outer_hip(1);
 Glove g_left_inner_knee(2);
@@ -22,12 +19,13 @@ Glove g_right_inner_hip(5);
 Glove g_right_outer_knee(6);
 Glove g_right_outer_hip(7);
 
-
 int incomingByte = 0;
 
 void setup()
 {
   Serial.begin(9600);
+  Glove::begin();
+  
   s_left_outer_knee.begin();
   s_left_outer_hip.begin();
   s_left_inner_knee.begin();
@@ -59,7 +57,7 @@ void gloveLoops()
   g_right_inner_knee.loop();
   g_right_inner_hip.loop();
   g_right_outer_knee.loop();
-  sg_right_outer_hip.loop();
+  g_right_outer_hip.loop();
 }
 
 void toggleFromSerial()

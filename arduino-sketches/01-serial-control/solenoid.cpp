@@ -1,12 +1,7 @@
 #include "solenoid.h"
-      
 
-void Solenoid::setupPump(int pin)
-{
-   solenoidActive = 0;
-   pumpPin = pin;
-   pinMode(pin, OUTPUT);
-}
+int Solenoid::solenoidActive = 0;
+int Solenoid::pumpPin = 3;
 
 Solenoid::Solenoid(int pin) : pin(pin), extending(false)
 {
@@ -14,6 +9,7 @@ Solenoid::Solenoid(int pin) : pin(pin), extending(false)
 
 void Solenoid::begin()
 {
+   pinMode(pumpPin, OUTPUT);
    pinMode(pin, OUTPUT);
 }
 

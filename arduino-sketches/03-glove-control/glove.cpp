@@ -1,16 +1,18 @@
 #include "glove.h"
-      
-void Glove::setupMux(int pin)
-{
-   muxPin = pin;
-   pinMode(pin, OUTPUT);
-   digitalWrite(pin, LOW);
-}
 
+
+int Glove::muxPin = 12;
+
+void Glove::begin()
+{
+   pinMode(muxPin, OUTPUT);
+   digitalWrite(muxPin, LOW);
+}
 
 Glove::Glove(int inputNumber) : inputNumber(inputNumber), adcValue(0)
 {
 }
+
 
 void Glove::loop()
 {
@@ -55,6 +57,11 @@ void Glove::loop()
          adcValue = analogRead(A4);
       break;
    }
+
+   Serial.print("input: ");
+   Serial.print(inputNumber);
+   Serial.print(" , ");
+   Serial.println(adcValue);
 
 }
 

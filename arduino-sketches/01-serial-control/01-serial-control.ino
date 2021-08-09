@@ -2,7 +2,6 @@
 //pump 400ma
 //sol 130ma
 
-Solenoid::setupPump(3);
 Solenoid s_left_outer_knee(4);
 Solenoid s_left_outer_hip(5);
 Solenoid s_left_inner_knee(6);

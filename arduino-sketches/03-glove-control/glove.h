@@ -1,3 +1,6 @@
+#ifndef GLOVE_H
+#define GLOVE_H
+
 #include <Arduino.h>
 
 using namespace std;
@@ -5,18 +8,16 @@ using namespace std;
 class Glove {
 
    public:
-      static int muxPin;
-      
-      static void setupMux(int pin);
-
+      static void begin();
       Glove(int inputNumber);
       void loop();
-
-      int adcValue;
-
       bool isFlexed();
 
    private:
-      int pin;
+      static int muxPin;
+      int adcValue;
+      int inputNumber;
 
 };
+
+#endif
