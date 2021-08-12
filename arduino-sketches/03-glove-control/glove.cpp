@@ -67,10 +67,9 @@ void Glove::loop()
 
 bool Glove::isFlexed()
 {
-   if(adcValue < 500){
+   if(adcValue < 290){
       return false;
    }
 
    return true;
 }
-

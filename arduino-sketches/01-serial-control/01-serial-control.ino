@@ -83,5 +83,5 @@ void loop()
 {
   toggleFromSerial();
   solenoidLoops();
-  delay(1);
+  delay(50);
 }
