@@ -3,7 +3,7 @@
 #include "solenoid.h"
 #include "glove.h"
 
-PCF8574 pcf(0x20);
+//PCF8574 pcf(0x20);
 
 Solenoid s_left_outer_knee(4);
 Solenoid s_left_outer_hip(5);
@@ -28,7 +28,7 @@ int incomingByte = 0;
 void setup()
 {
   Serial.begin(9600);
-  pcf.begin();
+  //pcf.begin();
 
   Glove::begin();
   
@@ -66,45 +66,46 @@ void gloveLoops()
   g_right_outer_hip.loop();
 }
 
-void toggleFromButtons(){
-  byte inputStates = pcf.readButton8();
+void toggle(){
+  byte inputStates = 0;
+//  byte inputStates = pcf.readButton8();
 
-  if(bitRead(inputStates, 0))
+  if(g_left_outer_knee.isFlexed() || bitRead(inputStates, 0))
     s_left_outer_knee.extend();
   else
     s_left_outer_knee.retract();
 
-  if(bitRead(inputStates, 1))
+  if(g_left_outer_hip.isFlexed() || bitRead(inputStates, 1))
     s_left_outer_hip.extend();
   else
     s_left_outer_hip.retract();
 
-  if(bitRead(inputStates, 2))
+  if(g_left_inner_knee.isFlexed() || bitRead(inputStates, 2))
     s_left_inner_knee.extend();
   else
     s_left_inner_knee.retract();
 
-  if(bitRead(inputStates, 3))
+  if(g_left_inner_hip.isFlexed() || bitRead(inputStates, 3))
     s_left_inner_hip.extend();
   else
     s_left_inner_hip.retract();
 
-  if(bitRead(inputStates, 4))
+  if(g_right_inner_knee.isFlexed() || bitRead(inputStates, 4))
     s_right_inner_knee.extend();
   else
     s_right_inner_knee.retract();
 
-  if(bitRead(inputStates, 5))
+  if(g_right_inner_hip.isFlexed() || bitRead(inputStates, 5))
     s_right_inner_hip.extend();
   else
     s_right_inner_hip.retract();
 
-  if(bitRead(inputStates, 6))
+  if(g_right_outer_knee.isFlexed() || bitRead(inputStates, 6))
     s_right_outer_knee.extend();
   else
     s_right_outer_knee.retract();
 
-  if(bitRead(inputStates, 7))
+  if(g_right_outer_hip.isFlexed() || bitRead(inputStates, 7))
     s_right_outer_hip.extend();
   else
     s_right_outer_hip.retract();
@@ -116,7 +117,8 @@ void loop()
 {
   solenoidLoops();
   gloveLoops();
-  toggleFromButtons();
-  delay(50);
-
+  toggle();
+  delay(250);
+  Serial.println();
+  Serial.println();
 }

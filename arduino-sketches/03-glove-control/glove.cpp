@@ -20,14 +20,14 @@ void Glove::loop()
       case 0:
       case 1:
       case 2:
-         digitalWrite(muxPin, LOW);
+         digitalWrite(muxPin, HIGH);
          delay(10);
       break;
 
       case 3:
       case 4:
       case 5:
-         digitalWrite(muxPin, HIGH);
+         digitalWrite(muxPin, LOW);
          delay(10);
       break;
 
@@ -67,7 +67,7 @@ void Glove::loop()
 
 bool Glove::isFlexed()
 {
-   if(adcValue < 290){
+   if(adcValue < 250){
       return false;
    }
 
