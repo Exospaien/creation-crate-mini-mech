@@ -1,15 +1,22 @@
 #include "solenoid.h"
-//pump 400ma
-//sol 130ma
 
-Solenoid s_left_outer_knee(4);
-Solenoid s_left_outer_hip(5);
-Solenoid s_left_inner_knee(6);
-Solenoid s_left_inner_hip(7);
-Solenoid s_right_inner_knee(8);
-Solenoid s_right_inner_hip(9);
-Solenoid s_right_outer_knee(10);
-Solenoid s_right_outer_hip(11);
+#define LEFT_OUTER_KNEE_S     5
+#define LEFT_OUTER_HIP_S      4
+#define LEFT_INNER_KNEE_S     6
+#define LEFT_INNER_HIP_S      7
+#define RIGHT_INNER_KNEE_S    8
+#define RIGHT_INNER_HIP_S     9
+#define RIGHT_OUTER_KNEE_S    10
+#define RIGHT_OUTER_HIP_S     11
+
+Solenoid s_left_outer_knee(LEFT_OUTER_KNEE_S);
+Solenoid s_left_outer_hip(LEFT_OUTER_HIP_S);
+Solenoid s_left_inner_knee(LEFT_INNER_KNEE_S);
+Solenoid s_left_inner_hip(LEFT_INNER_HIP_S);
+Solenoid s_right_inner_knee(RIGHT_INNER_KNEE_S);
+Solenoid s_right_inner_hip(RIGHT_INNER_HIP_S);
+Solenoid s_right_outer_knee(RIGHT_OUTER_KNEE_S);
+Solenoid s_right_outer_hip(RIGHT_OUTER_HIP_S);
 
 int incomingByte = 0;
 
@@ -83,5 +90,5 @@ void loop()
 {
   toggleFromSerial();
   solenoidLoops();
-  delay(50);
+  delay(100);
 }
