@@ -1,0 +1,15 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"CASE";"MF";"MONTHLY_USAGE";"MPN";"OC_FARNELL";"OC_NEWARK";"PART_NUMBER";"POPULARITY";"PRICE";"PROD_ID";"SF_SKU";"SUPPLIER";"TYPE";"VALUE";
+"1";"0.1uF";"0.1UF-0603-25V-5%";"0603";"C1";"0.1µF ceramic capacitors";"";"";"";"";"";"";"";"";"";"CAP-08604";"";"";"";"0.1uF";
+"9";"100";"100OHM-0603-1/10W-1%";"0603";"R1, R11, R13, R15, R17, R19, R21, R23, R25";"100Ω resistor";"";"";"";"";"";"";"";"";"";"RES-07863";"";"";"";"100";
+"9";"100nF";"0015_100NF_0603";"C0603-ROUND";"C10, C13, C14, C15, C16, C17, C18, C19, C20";"100nF 0603 50V";"0603";"";"_____";"";"";"";"cl10b104kbnc";"";"_____";"";"";"_____";"Condensatori";"100nF";
+"9";"10k";"10KOHM-0603-1/10W-1%";"0603";"R2, R12, R14, R16, R18, R20, R22, R24, R26";"10kΩ resistor";"";"";"";"";"";"";"";"";"";"RES-00824";"";"";"";"10k";
+"8";"1K";"10KOHM-0603-1/10W-1%";"0603";"R3, R29, R30, R31, R32, R33, R34, R35";"10kΩ resistor";"";"";"";"";"";"";"";"";"";"RES-00824";"";"";"";"10k";
+"8";"220mA/50V/3.5Ω";"MOSFET-NCH-BSS138";"SOT23-3";"Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9";"N-channel MOSFETs";"";"";"";"";"";"";"";"";"";"TRANS-00830";"";"";"";"220mA/50V/3.5Ω";
+"9";"250mA/100V";"DIODE-BAS16J";"SOD-323";"D2, D3, D4, D5, D6, D7, D8, D9, D10";"Diode";"";"";"";"";"";"";"";"";"";"DIO-09646";"";"";"";"250mA/100V";
+"1";"2520-";"2520-";"PAK100/2500-20";"X1";"3M (TM) Pak 100 4-Wall Header";"";"";"";"";"unknown";"unknown";"";"0";"";"";"";"";"";"";
+"1";"35A/25V/8.5mΩ";"MOSFET-NCH-FDD8780";"DPAK";"Q1";"N-channel MOSFETs";"";"";"";"";"";"";"";"";"";"TRANS-09984";"";"";"";"35A/25V/8.5mΩ";
+"2";"4.7k";"4.7KOHM-0603-1/10W-1%";"0603";"R4, R5";"4.7kΩ resistor";"";"";"";"";"";"";"";"";"";"RES-07857";"";"";"";"4.7k";
+"1";"ARDUINO_UNO_R3_SHIELDNOLABELS";"ARDUINO_UNO_R3_SHIELDNOLABELS";"UNO_R3_SHIELD_NOLABELS";"B1";"Arduino R3 Shield Footprint";"";"";"";"";"";"";"";"";"";"";"";"";"";"";
+"8";"MOMENTARY-SWITCH-SPST-SMD-5.2MM";"MOMENTARY-SWITCH-SPST-SMD-5.2MM";"TACTILE_SWITCH_SMD_5.2MM";"S1, S2, S3, S4, S5, S6, S7, S8";"Momentary Switch (Pushbutton) - SPST";"";"";"";"";"";"";"";"";"";"SWCH-08247";"COM-08720";"";"";"";
+"1";"PCF8574TS";"PCF8574TS";"SSOP20";"IC1";"I2C-Bus Remote 8-bit I/O expander";"";"";"";"PCF8574TS/3,118";"1506644";"70R6873";"";"0";"";"";"";"";"";"";
+"8";"RED";"LED-RED0603";"LED-0603";"D1, D11, D12, D13, D14, D15, D16, D17";"Red SMD LED";"";"";"";"";"";"";"";"";"";"DIO-00819";"";"";"";"RED";

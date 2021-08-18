@@ -3144,14 +3144,14 @@ CONN_04
 <part name="U$43" library="MyPOW" deviceset="COM" device=""/>
 <part name="C12" library="Condensatori" deviceset="0015_100NF_0603" device="" value="100nF"/>
 <part name="U$44" library="MyPOW" deviceset="COM" device=""/>
-<part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" "/>
-<part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" "/>
-<part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" "/>
-<part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" "/>
-<part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" "/>
-<part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" "/>
-<part name="R27" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" "/>
-<part name="R28" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" "/>
+<part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="15k"/>
+<part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="15k"/>
+<part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="15k"/>
+<part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="15k"/>
+<part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="15k"/>
+<part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="15k"/>
+<part name="R27" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="15k"/>
+<part name="R28" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="15k"/>
 <part name="B1" library="SparkFun-Boards" library_urn="urn:adsk.eagle:library:509" deviceset="ARDUINO_UNO_R3_SHIELD" device="NOLABELS" package3d_urn="urn:adsk.eagle:package:37324/1"/>
 <part name="IC3" library="toy-mech" deviceset="74LV4053PW" device=""/>
 <part name="U$5" library="MyPOW" deviceset="COM" device=""/>
@@ -3171,7 +3171,6 @@ CONN_04
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="SUPPLY14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
@@ -3195,8 +3194,8 @@ CONN_04
 <instance part="SUPPLY10" gate="G$1" x="-17.78" y="-15.24" smashed="yes">
 <attribute name="VALUE" x="-17.78" y="-12.446" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY13" gate="G$1" x="-45.72" y="7.62" smashed="yes">
-<attribute name="VALUE" x="-45.72" y="10.414" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY13" gate="G$1" x="-38.1" y="7.62" smashed="yes">
+<attribute name="VALUE" x="-38.1" y="10.414" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="U$10" gate="G$1" x="-111.76" y="-5.08" smashed="yes" rot="R270"/>
 <instance part="C2" gate="G$1" x="-51.562" y="12.7" smashed="yes">
@@ -3251,7 +3250,7 @@ CONN_04
 <segment>
 <pinref part="IC3" gate="A" pin="VCC"/>
 <pinref part="SUPPLY13" gate="G$1" pin="5V"/>
-<wire x1="-45.72" y1="7.62" x2="-51.562" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="7.62" x2="-51.562" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="-51.562" y1="7.62" x2="-50.8" y2="7.62" width="0.1524" layer="91"/>
 <junction x="-51.562" y="7.62"/>
@@ -3260,19 +3259,19 @@ CONN_04
 <net name="N$9" class="0">
 <segment>
 <pinref part="IC3" gate="A" pin="1Z"/>
-<wire x1="-50.8" y1="2.54" x2="-38.1" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="2.54" x2="-38.1" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="2.54" x2="-22.86" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="2.54" x2="-22.86" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="A0"/>
-<wire x1="-38.1" y1="12.7" x2="-7.62" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="12.7" x2="-7.62" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="A1"/>
-<wire x1="-7.62" y1="10.16" x2="-40.64" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="10.16" x2="-40.64" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="10.16" x2="-25.4" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="10.16" x2="-25.4" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="2Z"/>
-<wire x1="-40.64" y1="5.08" x2="-50.8" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="5.08" x2="-50.8" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -3280,10 +3279,10 @@ CONN_04
 <pinref part="IC3" gate="A" pin="3Z"/>
 <wire x1="-101.6" y1="0" x2="-109.22" y2="0" width="0.1524" layer="91"/>
 <wire x1="-109.22" y1="0" x2="-109.22" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="25.4" x2="-43.18" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="25.4" x2="-27.94" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="A2"/>
-<wire x1="-43.18" y1="25.4" x2="-43.18" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="25.4" x2="-27.94" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -3408,16 +3407,16 @@ CONN_04
 <attribute name="NAME" x="129.54" y="5.715" size="1.778" layer="95"/>
 <attribute name="VALUE" x="129.54" y="-2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="IC2" gate="P" x="124.46" y="91.44" smashed="yes"/>
-<instance part="U$40" gate="G$1" x="124.46" y="81.28" smashed="yes"/>
+<instance part="IC2" gate="P" x="121.92" y="93.98" smashed="yes"/>
+<instance part="U$40" gate="G$1" x="121.92" y="81.28" smashed="yes"/>
 <instance part="U$41" gate="G$1" x="111.76" y="38.1" smashed="yes"/>
 <instance part="U$42" gate="G$1" x="111.76" y="15.24" smashed="yes"/>
 <instance part="U$43" gate="G$1" x="111.76" y="-7.62" smashed="yes"/>
-<instance part="C12" gate="G$1" x="129.54" y="100.33" smashed="yes" rot="R270">
-<attribute name="NAME" x="129.921" y="98.806" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="124.841" y="98.806" size="1.778" layer="96" rot="R270"/>
+<instance part="C12" gate="G$1" x="129.54" y="101.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="129.921" y="100.076" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="124.841" y="100.076" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U$44" gate="G$1" x="133.858" y="97.79" smashed="yes"/>
+<instance part="U$44" gate="G$1" x="134.62" y="99.06" smashed="yes"/>
 <instance part="R4" gate="G$1" x="35.56" y="71.12" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.084" y="71.12" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="34.036" y="71.12" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
@@ -3478,14 +3477,11 @@ CONN_04
 <instance part="SUPPLY4" gate="G$1" x="10.16" y="68.58" smashed="yes" rot="R270">
 <attribute name="VALUE" x="12.954" y="68.58" size="1.778" layer="96" rot="R270" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY6" gate="G$1" x="121.92" y="99.06" smashed="yes">
-<attribute name="VALUE" x="121.92" y="101.854" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY6" gate="G$1" x="121.92" y="101.6" smashed="yes">
+<attribute name="VALUE" x="121.92" y="104.394" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY7" gate="G$1" x="48.26" y="104.14" smashed="yes">
 <attribute name="VALUE" x="45.72" y="106.934" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY8" gate="G$1" x="66.04" y="96.52" smashed="yes">
-<attribute name="VALUE" x="66.04" y="99.314" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY9" gate="G$1" x="88.9" y="71.12" smashed="yes" rot="R270">
 <attribute name="VALUE" x="91.694" y="71.12" size="1.778" layer="96" rot="R270" align="bottom-center"/>
@@ -3527,11 +3523,12 @@ CONN_04
 <segment>
 <pinref part="IC2" gate="P" pin="V-"/>
 <pinref part="U$40" gate="G$1" pin="COM"/>
+<wire x1="121.92" y1="86.36" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="1"/>
 <pinref part="U$44" gate="G$1" pin="COM"/>
-<wire x1="133.858" y1="100.33" x2="132.08" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="COM"/>
@@ -3785,10 +3782,9 @@ CONN_04
 <segment>
 <pinref part="IC2" gate="P" pin="V+"/>
 <pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="100.33" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="101.6" x2="121.92" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="G$1" pin="5V"/>
-<wire x1="121.92" y1="99.06" x2="124.46" y2="99.06" width="0.1524" layer="91"/>
-<junction x="121.92" y="99.06"/>
+<junction x="121.92" y="101.6"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="P" pin="V+"/>
