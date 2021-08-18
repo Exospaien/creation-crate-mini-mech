@@ -16,6 +16,7 @@ Glove::Glove(int inputNumber) : inputNumber(inputNumber), adcValue(0)
 
 void Glove::loop()
 {
+  adcValue = 0;
    switch(inputNumber){
       case 0:
       case 1:
