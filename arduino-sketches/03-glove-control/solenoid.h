@@ -2,7 +2,10 @@
 #define SOLENOID_H
 
 #include <Arduino.h>
+#include <elapsedMillis.h>
 
+#define TIMEOUT_PERIOD 30
+      
 using namespace std;
 
 class Solenoid {

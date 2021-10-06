@@ -11,7 +11,7 @@ class Glove {
       static void begin();
       Glove(int inputNumber);
       void loop();
-      bool isFlexed();
+      bool isFlexed(unsigned int threshold);
 
    private:
       static int muxPin;

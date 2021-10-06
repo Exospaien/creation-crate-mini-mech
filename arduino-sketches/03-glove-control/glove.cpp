@@ -58,17 +58,17 @@ void Glove::loop()
          adcValue = analogRead(A4);
       break;
    }
-
-   Serial.print("input: ");
-   Serial.print(inputNumber);
-   Serial.print(" , ");
-   Serial.println(adcValue);
+//   
+//   Serial.print("input: ");
+//   Serial.print(inputNumber);
+//   Serial.print(" , ");
+//   Serial.println(adcValue);
 
 }
 
-bool Glove::isFlexed()
+bool Glove::isFlexed(unsigned int threshold)
 {
-   if(adcValue < 250){
+   if(adcValue > threshold){
       return false;
    }
 
