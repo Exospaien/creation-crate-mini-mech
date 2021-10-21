@@ -1,7 +1,7 @@
-"Qty";"Value";"Device";"Package";"Parts";"Description";"CASE";"COPYRIGHT";"MANUFACTURER_PART_NUMBER";"MONTHLY_USAGE";"PART_NUMBER";"POPULARITY";"PRICE";"PROD_ID";"SF_ID";"SOURCELIBRARY";"SUPPLIER";"TYPE";"VALUE";"VENDOR";
-"4";"";"CONN_04JST-PTH";"JST-4-PTH";"J1, J2, J3, J4";"Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections";"";"";"";"";"";"";"";"WIRE-13531";"PRT-09916";"";"";"";"";"";
-"3";"100nF";"0015_100NF_0603";"C0603-ROUND";"C2, C11, C12";"100nF 0603 50V";"0603";"";"";"_____";"cl10b104kbnc";"";"_____";"";"";"";"_____";"Condensatori";"100nF";"";
-"8";"15k";"RESISTOR0603";"0603";"R4, R5, R6, R7, R8, R9, R27, R28";"Generic Resistor Package";"";"";"";"";"";"";"";" ";"";"";"";"";" ";"";
-"1";"74LV4053PW";"74LV4053PW";"SOT403-1_NEX";"IC3";"";"";"Copyright (C) 2016 Accelerated Designs. All rights reserved";"74LV4053PW";"";"";"";"";"";"";"Nexperia_2018-05-2018";"";"";"";"Nexperia";
-"1";"ARDUINO_UNO_R3_SHIELDNOLABELS";"ARDUINO_UNO_R3_SHIELDNOLABELS";"UNO_R3_SHIELD_NOLABELS";"B1";"Arduino R3 Shield Footprint";"";"";"";"";"";"";"";"";"";"";"";"";"";"";
-"2";"LM324D";"LM324D";"SO14";"IC1, IC2";"OP AMP";"";"";"";"";"";"1";"";"";"";"";"";"";"";"";
+"Qty";"Value";"Device";"Package";"Parts";"Description";"CASE";"MONTHLY_USAGE";"PART_NUMBER";"POPULARITY";"PRICE";"PROD_ID";"SF_ID";"SUPPLIER";"TYPE";"VALUE";
+"4";"";"CONN_04JST-PTH";"JST-4-PTH";"J1, J2, J3, J4";"Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections";"";"";"";"";"";"WIRE-13531";"PRT-09916";"";"";"";
+"3";"100nF";"0015_100NF_0603";"C0603-ROUND";"C2, C11, C12";"100nF 0603 50V";"0603";"_____";"cl10b104kbnc";"";"_____";"";"";"_____";"Condensatori";"100nF";
+"8";"15k";"RESISTOR0603";"0603";"R4, R5, R6, R7, R8, R9, R27, R28";"Generic Resistor Package";"";"";"";"";"";" ";"";"";"";" ";
+"1";"4052D";"4052D";"SO16";"IC4";"Dual 4-channel ANALOG MULTIPLEXER";"";"";"";"1";"";"";"";"";"";"";
+"1";"ARDUINO_UNO_R3_SHIELDNOLABELS";"ARDUINO_UNO_R3_SHIELDNOLABELS";"UNO_R3_SHIELD_NOLABELS";"B1";"Arduino R3 Shield Footprint";"";"";"";"";"";"";"";"";"";"";
+"2";"LM324D";"LM324D";"SO14";"IC1, IC2";"OP AMP";"";"";"";"1";"";"";"";"";"";"";
