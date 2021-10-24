@@ -58,11 +58,11 @@ void Glove::loop()
          adcValue = analogRead(A4);
       break;
    }
-//   
-//   Serial.print("input: ");
-//   Serial.print(inputNumber);
-//   Serial.print(" , ");
-//   Serial.println(adcValue);
+   
+   Serial.print("input: ");
+   Serial.print(inputNumber);
+   Serial.print(" , ");
+   Serial.println(adcValue);
 
 }
 
