@@ -1,12 +1,15 @@
 #include "glove.h"
 
 
-int Glove::muxPin = 12;
+const int muxPinA = 12;
+const int muxPinB = 13;
 
 void Glove::begin()
 {
-   pinMode(muxPin, OUTPUT);
-   digitalWrite(muxPin, LOW);
+   pinMode(muxPinA, OUTPUT);
+   pinMode(muxPinB, OUTPUT);
+   digitalWrite(muxPinA, LOW);
+   digitalWrite(muxPinB, LOW);
 }
 
 Glove::Glove(int inputNumber) : inputNumber(inputNumber), adcValue(0)
@@ -20,45 +23,36 @@ void Glove::loop()
    switch(inputNumber){
       case 0:
       case 1:
-      case 2:
-         digitalWrite(muxPin, HIGH);
-         delay(10);
-      break;
-
-      case 3:
-      case 4:
-      case 5:
-         digitalWrite(muxPin, LOW);
-         delay(10);
-      break;
-
-   }
-
-   switch(inputNumber){
-      case 0:
-      case 3:
-         adcValue = analogRead(A0);
-      break;
-
-      case 1:
-      case 4:
-         adcValue = analogRead(A1);
+         digitalWrite(muxPinA, LOW);
+         digitalWrite(muxPinB, LOW);
       break;
 
       case 2:
+      case 3:
+         digitalWrite(muxPinA, LOW);
+         digitalWrite(muxPinB, HIGH);
+      break;
+
+      case 4:
       case 5:
-         adcValue = analogRead(A2);
+         digitalWrite(muxPinA, HIGH);
+         digitalWrite(muxPinB, LOW);
       break;
 
       case 6:
-         adcValue = analogRead(A3);
-      break;
-
       case 7:
-         adcValue = analogRead(A4);
+         digitalWrite(muxPinA, HIGH);
+         digitalWrite(muxPinB, HIGH);
       break;
    }
-   
+
+   delay(10);
+
+   if(inputNumber % 2 == 0)
+      adcValue = analogRead(A0);
+   else
+      adcValue = analogRead(A1);
+
    Serial.print("input: ");
    Serial.print(inputNumber);
    Serial.print(" , ");
@@ -68,9 +62,8 @@ void Glove::loop()
 
 bool Glove::isFlexed(unsigned int threshold)
 {
-   if(adcValue > threshold){
+   if(adcValue > threshold)
       return false;
-   }
 
    return true;
 }

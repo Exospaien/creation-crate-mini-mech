@@ -38,7 +38,7 @@ Glove g_left_inner_knee(2);
 Glove g_left_inner_hip(5);
 Glove g_right_inner_knee(0);
 Glove g_right_inner_hip(3);
-//Glove g_right_outer_knee(7);
+Glove g_right_outer_knee(7);
 Glove g_right_outer_hip(6);
 
 int incomingByte = 0;
@@ -80,8 +80,7 @@ void gloveLoops()
   g_right_inner_knee.loop();
   g_right_inner_hip.loop();
   g_right_outer_hip.loop();
-
-   // g_right_outer_knee.loop();
+  g_right_outer_knee.loop();
 }
 
 void toggle(){
@@ -118,10 +117,10 @@ void toggle(){
    else
      s_right_inner_hip.retract();
 
-//   if(g_right_outer_knee.isFlexed(250) || !bitRead(inputStates, RIGHT_OUTER_KNEE_B))
-//     s_right_outer_knee.retract();
-//   else
-//     s_right_outer_knee.extend();
+  if(g_right_outer_knee.isFlexed(250) || !bitRead(inputStates, RIGHT_OUTER_KNEE_B))
+    s_right_outer_knee.retract();
+  else
+    s_right_outer_knee.extend();
 
   if(g_right_outer_hip.isFlexed(280) || !bitRead(inputStates, RIGHT_OUTER_HIP_B))
      s_right_outer_hip.extend();
