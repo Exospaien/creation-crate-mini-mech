@@ -32,14 +32,14 @@ Solenoid s_right_inner_hip(RIGHT_INNER_HIP_S);
 Solenoid s_right_outer_knee(RIGHT_OUTER_KNEE_S);
 Solenoid s_right_outer_hip(RIGHT_OUTER_HIP_S);
 
-Glove g_left_outer_knee(1);
-Glove g_left_outer_hip(4);
-Glove g_left_inner_knee(2);
-Glove g_left_inner_hip(5);
-Glove g_right_inner_knee(0);
-Glove g_right_inner_hip(3);
-Glove g_right_outer_knee(7);
-Glove g_right_outer_hip(6);
+Glove g_left_outer_knee(2);
+Glove g_left_outer_hip(5);
+Glove g_left_inner_knee(3);
+Glove g_left_inner_hip(0);
+Glove g_right_inner_knee(6);
+Glove g_right_inner_hip(1);
+Glove g_right_outer_knee(4);
+Glove g_right_outer_hip(7);
 
 int incomingByte = 0;
 
