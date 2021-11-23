@@ -3,23 +3,23 @@
 #include "solenoid.h"
 #include "glove.h"
 
-#define LEFT_OUTER_KNEE_S     4
-#define LEFT_OUTER_HIP_S      5
-#define LEFT_INNER_KNEE_S     6
-#define LEFT_INNER_HIP_S      7
-#define RIGHT_INNER_KNEE_S    8
-#define RIGHT_INNER_HIP_S     9
-#define RIGHT_OUTER_KNEE_S    10
-#define RIGHT_OUTER_HIP_S     11
+#define LEFT_OUTER_KNEE_S     5
+#define LEFT_OUTER_HIP_S      4
+#define LEFT_INNER_KNEE_S     7
+#define LEFT_INNER_HIP_S      6
+#define RIGHT_INNER_KNEE_S    9
+#define RIGHT_INNER_HIP_S     8
+#define RIGHT_OUTER_KNEE_S    11
+#define RIGHT_OUTER_HIP_S     10
 
-#define LEFT_OUTER_KNEE_B     3
-#define LEFT_OUTER_HIP_B      4
-#define LEFT_INNER_KNEE_B     5
-#define LEFT_INNER_HIP_B      2
-#define RIGHT_INNER_KNEE_B    6
-#define RIGHT_INNER_HIP_B     1
-#define RIGHT_OUTER_KNEE_B    7
-#define RIGHT_OUTER_HIP_B     0
+#define LEFT_OUTER_KNEE_B     0
+#define LEFT_OUTER_HIP_B      1
+#define LEFT_INNER_KNEE_B     2
+#define LEFT_INNER_HIP_B      3
+#define RIGHT_INNER_KNEE_B    4
+#define RIGHT_INNER_HIP_B     5
+#define RIGHT_OUTER_KNEE_B    6
+#define RIGHT_OUTER_HIP_B     7
 
 PCF8574 pcf(0x20);
 
@@ -32,14 +32,14 @@ Solenoid s_right_inner_hip(RIGHT_INNER_HIP_S);
 Solenoid s_right_outer_knee(RIGHT_OUTER_KNEE_S);
 Solenoid s_right_outer_hip(RIGHT_OUTER_HIP_S);
 
-Glove g_left_outer_knee(2);
-Glove g_left_outer_hip(5);
-Glove g_left_inner_knee(3);
-Glove g_left_inner_hip(0);
-Glove g_right_inner_knee(6);
-Glove g_right_inner_hip(1);
-Glove g_right_outer_knee(4);
-Glove g_right_outer_hip(7);
+Glove g_left_outer_knee(3);
+Glove g_left_outer_hip(4);
+Glove g_left_inner_knee(0);
+Glove g_left_inner_hip(5);
+Glove g_right_inner_knee(1);
+Glove g_right_inner_hip(6);
+Glove g_right_outer_knee(7);
+Glove g_right_outer_hip(2);
 
 int incomingByte = 0;
 
@@ -92,17 +92,17 @@ void toggle(){
   else
     s_left_outer_knee.extend();
 
-   if(g_left_outer_hip.isFlexed(280)|| !bitRead(inputStates, LEFT_OUTER_HIP_B))
+   if(g_left_outer_hip.isFlexed(200)|| !bitRead(inputStates, LEFT_OUTER_HIP_B))
      s_left_outer_hip.extend();
    else
      s_left_outer_hip.retract();
 
-  if(g_left_inner_knee.isFlexed(250)|| !bitRead(inputStates, LEFT_INNER_KNEE_B))
+  if(g_left_inner_knee.isFlexed(240)|| !bitRead(inputStates, LEFT_INNER_KNEE_B))
      s_left_inner_knee.retract();
    else
      s_left_inner_knee.extend();
 
-   if(g_left_inner_hip.isFlexed(290)|| !bitRead(inputStates, LEFT_INNER_HIP_B))
+   if(g_left_inner_hip.isFlexed(310)|| !bitRead(inputStates, LEFT_INNER_HIP_B))
      s_left_inner_hip.extend();
    else
      s_left_inner_hip.retract();
@@ -122,7 +122,7 @@ void toggle(){
   else
     s_right_outer_knee.extend();
 
-  if(g_right_outer_hip.isFlexed(300) || !bitRead(inputStates, RIGHT_OUTER_HIP_B))
+  if(g_right_outer_hip.isFlexed(280) || !bitRead(inputStates, RIGHT_OUTER_HIP_B))
      s_right_outer_hip.extend();
    else
      s_right_outer_hip.retract();
