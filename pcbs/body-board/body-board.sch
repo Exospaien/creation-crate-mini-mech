@@ -2164,7 +2164,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D6" library="OPL_Optoelectronics" library_urn="urn:adsk.eagle:library:8004780" deviceset="SMD-LED-CLEAR-RED(0805)" device="" package3d_urn="urn:adsk.eagle:package:8004829/1" value="RED-0805"/>
 <part name="D7" library="OPL_Optoelectronics" library_urn="urn:adsk.eagle:library:8004780" deviceset="SMD-LED-CLEAR-RED(0805)" device="" package3d_urn="urn:adsk.eagle:package:8004829/1" value="RED-0805"/>
 <part name="D8" library="OPL_Optoelectronics" library_urn="urn:adsk.eagle:library:8004780" deviceset="SMD-LED-CLEAR-RED(0805)" device="" package3d_urn="urn:adsk.eagle:package:8004829/1" value="RED-0805"/>
-<part name="D9" library="OPL_Optoelectronics" library_urn="urn:adsk.eagle:library:8004780" deviceset="SMD-LED-CLEAR-RED(0805)" device="" package3d_urn="urn:adsk.eagle:package:8004829/1" value="RED-0805"/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 <part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 <part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
@@ -2173,7 +2172,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 <part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 <part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
-<part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
@@ -2202,7 +2200,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY26" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
 <part name="SUPPLY27" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
 <part name="SUPPLY28" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
-<part name="SUPPLY29" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2342,10 +2339,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="44.45" y="46.99" size="1.27" layer="95" ratio="10"/>
 <attribute name="VALUE" x="46.99" y="40.64" size="1.27" layer="96" ratio="10"/>
 </instance>
-<instance part="D9" gate="G$1" x="6.35" y="7.62" smashed="yes">
-<attribute name="NAME" x="-1.27" y="8.89" size="1.27" layer="95" ratio="10"/>
-<attribute name="VALUE" x="1.27" y="2.54" size="1.27" layer="96" ratio="10"/>
-</instance>
 <instance part="R1" gate="G$1" x="-27.94" y="139.7" smashed="yes">
 <attribute name="NAME" x="-27.94" y="141.224" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="-27.94" y="138.176" size="1.778" layer="96" font="vector" align="top-center"/>
@@ -2377,10 +2370,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R8" gate="G$1" x="60.96" y="45.72" smashed="yes">
 <attribute name="NAME" x="60.96" y="47.244" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="60.96" y="44.196" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="R9" gate="G$1" x="15.24" y="7.62" smashed="yes">
-<attribute name="NAME" x="15.24" y="9.144" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="15.24" y="6.096" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="-68.58" y="149.86" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-65.786" y="149.86" size="1.778" layer="96" rot="R270" align="bottom-center"/>
@@ -2466,9 +2455,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY28" gate="G$1" x="43.18" y="45.72" smashed="yes" rot="R90">
 <attribute name="VALUE" x="40.386" y="45.72" size="1.778" layer="96" rot="R90" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY29" gate="G$1" x="-2.54" y="7.62" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-5.334" y="7.62" size="1.778" layer="96" rot="R90" align="bottom-center"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -2507,12 +2493,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="D8" gate="G$1" pin="-"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="D9" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -2613,11 +2593,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="43.18" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D9" gate="G$1" pin="+"/>
-<pinref part="SUPPLY29" gate="G$1" pin="VIN"/>
-<wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="SUPPLY22" gate="G$1" pin="VIN"/>
 <pinref part="D2" gate="G$1" pin="+"/>
 <wire x1="-40.64" y1="109.22" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
@@ -2656,9 +2631,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="63.5" y1="25.4" x2="63.5" y2="12.7" width="0.1524" layer="91"/>
 <junction x="63.5" y="12.7"/>
 <junction x="63.5" y="25.4"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="12.7" x2="63.5" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
