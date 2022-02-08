@@ -13,7 +13,6 @@ class Solenoid {
       void extend();
       void retract();
       void loop();
-      void toggle();
  
    private:
       static int solenoidActive;

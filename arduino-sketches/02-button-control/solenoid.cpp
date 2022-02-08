@@ -32,14 +32,6 @@ void Solenoid::retract()
    }
 }
 
-void Solenoid::toggle(){
-  if(extending){
-    retract();
-  }else{
-    extend();
-  }
-}
-
 void Solenoid::loop()
 {
    if(solenoidActive > 0){

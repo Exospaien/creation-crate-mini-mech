@@ -4,7 +4,7 @@
 #include <Arduino.h>
 #include <elapsedMillis.h>
 
-#define TIMEOUT_PERIOD 30
+#define TIMEOUT_PERIOD 30  // Set to 30 seconds
       
 using namespace std;
 
@@ -16,7 +16,6 @@ class Solenoid {
       void extend();
       void retract();
       void loop();
-      void toggle();
  
    private:
       static int solenoidActive;
